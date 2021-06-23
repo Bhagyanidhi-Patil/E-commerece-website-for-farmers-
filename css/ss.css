@@ -1,0 +1,108 @@
+* {
+  box-sizing: border-box;
+}
+
+input[type=text], select, textarea {
+  width: 100%;
+  padding: 12px;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  resize: vertical;
+}
+input[type=email], select, textarea {
+  width: 100%;
+  padding: 12px;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  resize: vertical;
+}
+label {
+  margin-left: 50px;
+  padding: 12px 12px 12px 0;
+  display: inline-block;
+}
+
+.mid {
+  background-color: #04AA6D;
+  color: white;
+  padding: 20px 30px;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+  align-self: center;
+  margin-left: 40%;
+}
+
+.mid:hover {
+  background-color: #45a049;
+}
+.but{
+padding-top: 10px;
+margin-left: 10px;
+width: 60%;
+align-content: center;
+}
+.b{
+  padding-top: 10px;
+  margin-left: 10px;
+  width: 75%;
+}
+
+.container-fluid{
+  border-radius: 5px;
+  background-color: #f2f2f2;
+  padding: 20px;
+}
+
+.col-25 {
+ float: left;
+  width: 30%;
+  margin-top: 6px;
+}
+
+.col-50 {
+ float: center;
+  width: 100%;
+  margin-top: 6px;
+}
+.col-75 {
+  float: left;
+  width: 50%;
+  margin-top: 6px;
+}
+
+
+.row:after {
+  content: "";
+  display: table;
+  clear: both;
+}
+
+
+@media screen and (max-width: 600px) {
+  .col-25, .col-75, input[type=submit] {
+    width: 100%;
+    margin-top: 0;
+  }
+}
+.form-inline button {
+  padding: 10px 20px;
+  background-color: dodgerblue;
+  border: 1px solid #ddd;
+  color: white;
+  cursor: pointer;
+  float: right;
+}
+
+.form-inline button:hover {
+  background-color: royalblue;
+}
+#Features {
+
+    padding: 7% 15%;
+    position: relative;
+    z-index: 1;
+}
+.s{
+  background-image: url("https://wallpapercave.com/wp/wp8235620.jpg");
+}

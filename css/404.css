@@ -1,0 +1,106 @@
+* {
+    font-family:'Poppins', sans-serif;
+    color: white;
+    box-sizing: border-box;
+  }
+  :root {
+    --color-white: #f3f3f3;
+    --color-darkblue: #1b1b32;
+    --color-darkblue-alpha: rgba(27, 27, 50, 0.8);
+    --color-green: #37af65;
+  }
+  h1{
+    font-size: 2.7em;
+  }
+  
+  body {
+    background-image: url('https://raw.githubusercontent.com/bilguudeiblgd/ProjectArin-Landing-Page/master/img/arinback.PNG') ;
+    background-repeat: no-repeat;
+    background-size: 100%;
+    background-attachment: fixed;
+    z-index: -1;
+  }
+  main {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+  header {
+    margin: 3rem 0 3.5rem 0;
+  }
+  .description {
+    font-style: italic;
+    font-size: 1.3em;
+    text-align: center;
+  }
+  
+  .box {
+    border-radius: 20px;
+  
+    padding: 30px 40px;
+    z-index: 0;
+  }
+  form {
+    background: var(--color-darkblue-alpha);
+    padding: 2.5rem 3rem;
+    border-radius: 0.9rem;
+  }
+  
+  input[type="text"],
+  input[type="email"],
+  input[type="number"],
+  select[name="features"] {
+    display: block;
+    box-sizing: border-box;
+    background-color: floralwhite;
+    width: 100%;
+    padding: 0.7rem 0.5rem;
+    margin: 0.7rem 0rem;
+    border-radius: 5px;
+    color: black;
+  }
+  label[for="name"],
+  label[for="email"],
+  label[for="age"] {
+    font-size: 21px;
+  }
+  .almostlabel {
+    font-size: 21px;
+  }
+  .questions {
+    margin: 0 auto 0.5rem auto;
+    padding: 0.1rem;
+  }
+  .input-radio,
+  .input-checkbox {
+    /* display: inline-block; */
+    margin-right: 0.625rem;
+    margin-bottom: 1.4rem;
+  }
+  select,
+  option,
+  #openfeedback {
+    color: black;
+  }
+  textarea {
+    min-height: 120px;
+    width: 100%;
+    margin-top: 1rem;
+    padding: 0.625rem 0.625rem 0.625rem 0.625rem;
+    resize: vertical;
+  }
+  .submit-button {
+      display: block;
+      width: 100%;
+      padding: 0.75rem;
+      background: var(--color-green);
+      color: inherit;
+      border-radius: 2px;
+      cursor: pointer;
+    }
+  .submitcontainer{
+      margin-top: 10px;
+    }
+
+
+   
