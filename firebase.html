@@ -1,0 +1,68 @@
+<html>
+<head>
+    ADD PRODUCTS
+</head>
+<body>
+
+   
+    <script src="https://www.gstatic.com/firebasejs/8.6.5/firebase-app.js"></script>
+
+
+<script src="https://www.gstatic.com/firebasejs/8.6.5/firebase-analytics.js"></script>
+    
+    <script src="https://www.gstatic.com/firebasejs/8.6.5/firebase-auth.js"></script>
+<script src="https://www.gstatic.com/firebasejs/8.6.5/firebase-database.js"></script>
+    
+
+<script>
+  // Your web app's Firebase configuration
+  // For Firebase JS SDK v7.20.0 and later, measurementId is optional
+  var firebaseConfig = {
+    apiKey: "AIzaSyCSQn9SRW6iJJiDVNVb2AW57flEfK68B_4",
+    authDomain: "signin1-7951a.firebaseapp.com",
+    projectId: "signin1-7951a",
+    storageBucket: "signin1-7951a.appspot.com",
+    messagingSenderId: "106117467490",
+    appId: "1:106117467490:web:560e8d267767b4951fb03b",
+    measurementId: "G-TZQDJ7QHTF"
+  };
+  // Initialize Firebase
+  firebase.initializeApp(firebaseConfig);
+  firebase.analytics();
+
+  // Initialize Firebase
+  firebase.initializeApp(firebaseConfig);
+  firebase.analytics();
+
+
+    
+      function writeData(){
+
+              firebase.database().ref("Signin").push({
+                  firstname : document.getElementById("fname").value,
+                  lastname : document.getElementById("lname").value,
+          email: document.getElementById("email").value,
+          phone :document.getElementById("phone").value,
+          address : document.getElementById("address").value,
+          pincode : document.getElementById("pin").value,
+          district : document.getElementById("district").value,
+          state: document.getElementById("state").value         
+            
+            
+          });
+        }
+      
+    </script>
+
+    
+                <input type="text" id="fname"  placeholder="First Name">
+                <input type="text" id="lname"  placeholder="Last Name">
+        <input type="text" id="email" placeholder="email">
+        <input type="text" id="phone" placeholder="phone">
+        <input type="text" id="address" placeholder="address">
+        <input type="text" id="pin" placeholder="pin">      
+        <input type="text" id="district"  placeholder="district">
+        <input type="text" id="state" placeholder="state">
+                     <button onclick = "writeData()">Submit</button>
+            </body>
+    </html>
